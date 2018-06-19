@@ -10,7 +10,7 @@
 - 首先在目录下面找到lib目录，然后找到**think-hotswap-1.0.0.jar**这个文件，然后将其移动到里项目的**lib**目录下面。
 - 在启动的命令行中指定其：**java -javaagent:think-hotswap-1.0.0.jar=in=hotswap/in;out=hotswap/out**,
 详细的使用可以参考**lib**目录下面的**run.bat**文件，里面有详细的命令参数，可以通过简单的修改并可以使用了。
-请注意**-javaagent:think-hotswap-1.0.0.jar=in=hotswap/in;out=hotswap/out** 这个参数，首先-javaagent:think-hotswap-1.0.0.jar指定了其代理jar包对象，后面**=in=hotswap/in;out=hotswap/out** 相当于指定了参数，分别是需要替换源码的位置和源码编译输出的位置，这里我们使用了**;** 号来分割两个参数，之后我们将需要替换的源代码文件放入到/hotswap/in/目录下即可，该工具会自动编译文件输出到/hotswap/out/目录下，然后进行其热替换之后会自动将文件进行删除，具体使用可以参考其demo下面的演示。
+请注意 **-javaagent:think-hotswap-1.0.0.jar=in=hotswap/in;out=hotswap/out** 这个参数，首先 **-javaagent:think-hotswap-1.0.0.jar** 指定了其代理jar包对象，后面 **=in=hotswap/in;out=hotswap/out** 相当于指定了参数，分别是需要替换源码的位置和源码编译输出的位置，这里我们使用了 **;** 号来分割两个参数，之后我们将需要替换的源代码文件放入到 **/hotswap/in/** 目录下即可，该工具会自动编译文件输出到 **/hotswap/out/** 目录下，然后进行其热替换之后会自动将文件进行删除，具体使用可以参考其demo下面的演示。
 
 
 ## 界面预览
