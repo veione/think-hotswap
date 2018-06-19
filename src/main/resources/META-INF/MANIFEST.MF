@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Premain-Class: com.think.hotswap.HotSwapAgent
+Can-Retransform-Classes: true
+Can-Redefine-Classes: true
+Class-Path: lib/log4j-core-2.4.1.jar lib/slf4j-api-1.7.25.jar lib/log4j-slf4j-impl-2.4.1.jar lib/log4j-api-2.4.1.jar
